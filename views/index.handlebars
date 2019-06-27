@@ -1,0 +1,48 @@
+<div class="container">
+<h1>Burger Time!</h1>
+<div class="row"id="addburger">
+    {{!-- <form class="create-form">
+
+  <div class="form-group">
+    <label for="brg">Burger:</label>
+    <input type="text" id="brg" name="name">
+  </div>
+
+  <button type="submit" id="brgcook">Add Burger</button>
+</form> --}}
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h4 class="card-title">Add Burgers</h4>
+    <form class="create-form">
+
+  <div class="form-group">
+    <label for="brg">Burger:</label>
+    <input type="text" id="brg" name="name">
+  </div>
+
+  <button type="submit" id="brgcook">Add Burger</button>
+</form>
+  </div>
+</div>
+</div>
+<div class="row justify-content-start" id="listburger">
+    <div class="col-sm-3 menulist"><h3>In Menu</h3>
+        <ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+    <li class="menu">{{burger_name}}  <button id="eat" data-id="{{id}}">Eat Burger</button></li>
+    {{/unless}}
+  {{/each}}
+</ul>
+    </div>
+    <div class="col-sm-3 menulist"><h3>In Belly</h3>
+        <ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      <li>{{burger_name}}</li>
+    {{/if}}
+  {{/each}}
+</ul>
+    </div>
+</div>
+</div>

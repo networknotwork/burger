@@ -1,0 +1,21 @@
+body {
+    background-color: #ff6
+}
+
+div {
+    background-color: #f77;
+    margin: 10px;
+}
+
+.container{
+    border: 5px #001 solid;
+    border-radius: 5px;
+}
+
+.menulist {
+    border: 5px #fff solid;
+    border-radius: 5px;
+}
+li{
+    margin-bottom: 4pt;
+}
